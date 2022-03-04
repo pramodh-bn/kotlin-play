@@ -6,4 +6,8 @@ fun main(args: Array<String>) {
   println(addFive.invoke(18))
   val addInts = {x: Int, y: Int -> x+y}
   println(addInts(5,6))
+  val greeting: () -> String = {"Hello"}
+  println(greeting())
+  val myLambda: () -> Unit = { println("Hello Lambda")}
+  myLambda()
 }
