@@ -15,4 +15,7 @@ fun main() {
   val highestUnitPrice = groceries.maxByOrNull { it.unitPrice }
   val lowestQuantity = groceries.minByOrNull { it.quantity }
   println("$highestUnitPrice --- $lowestQuantity")
+  val sumQuantities = groceries.sumByOrNull {
+    it.quantity
+  }
 }
