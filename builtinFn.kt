@@ -23,6 +23,12 @@ fun main() {
   }
   println("$totalPrice for all the $sumQuantities")
 
-  val vegetables = groceries.filter { it.unitPrice > 3 }
+  val vegetables = groceries.filter { it.category ==  "Vegetable" }
   println("${vegetables}")
+  val unitPriceCover3 = groceries.filter { it.unitPrice > 3}
+  println("${unitPriceCover3}")
+  val notFrozen = groceries.filterNot {
+    it.category == "Frozen"
+  }
+  println("${notFrozen}")
 }
