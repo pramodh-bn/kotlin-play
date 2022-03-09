@@ -22,4 +22,7 @@ fun main() {
     it.quantity * it.unitPrice
   }
   println("$totalPrice for all the $sumQuantities")
+
+  val vegetables = groceries.filter { it.unitPrice > 3 }
+  println("${vegetables}")
 }
