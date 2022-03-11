@@ -34,4 +34,6 @@ fun main() {
   val doubleInts = ints.map { it * 2}
   println("${doubleInts}")
   println("${groceries.map{it.name}}")
+  val newPrices = groceries.filter { it.unitPrice > 3.0 }.map { it.unitPrice * 2 }
+  println("${newPrices}")
 }
