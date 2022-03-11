@@ -33,4 +33,5 @@ fun main() {
   println("${notFrozen}")
   val doubleInts = ints.map { it * 2}
   println("${doubleInts}")
+  println("${groceries.map{it.name}}")
 }
