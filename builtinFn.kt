@@ -31,4 +31,6 @@ fun main() {
     it.category == "Frozen"
   }
   println("${notFrozen}")
+  val doubleInts = ints.map { it * 2}
+  println("${doubleInts}")
 }
