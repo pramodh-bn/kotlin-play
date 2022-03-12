@@ -37,4 +37,12 @@ fun main() {
   val newPrices = groceries.filter { it.unitPrice > 3.0 }.map { it.unitPrice * 2 }
   println("${newPrices}")
   groceries.forEach { println(it.name) }
+
+  var itemNames = ""
+  groceries.forEach({ itemNames += "${it.name} "})
+  println("itemNames: ${itemNames}")
+  groceries.groupBy { it.category }.forEach {
+    println(it.key)
+    it.value.forEach { println("      ${it.name}")}
+  }
 }
