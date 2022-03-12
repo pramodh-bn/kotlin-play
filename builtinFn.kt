@@ -36,4 +36,5 @@ fun main() {
   println("${groceries.map{it.name}}")
   val newPrices = groceries.filter { it.unitPrice > 3.0 }.map { it.unitPrice * 2 }
   println("${newPrices}")
+  groceries.forEach { println(it.name) }
 }
