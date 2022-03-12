@@ -11,12 +11,14 @@ fun main(args: Array<String>) {
   val myLambda: () -> Unit = { println("Hello Lambda")}
   myLambda()
   val converter = {x: Double -> x*x}
-  println(convert(100.25, converter))
-  convert(20.0) { it * 20.0 + 6.1}
+  println(convert1(100.25, converter))
+  convert1(20.0) { it * 20.0 + 6.1}
   convertFive { it * 4.5 + 10000.09999}
 }
-
-fun convert(x: Double, converter: (Double)-> Double): Double {
+/*
+* I had to do this as IntelliJ IDEA was giving me troubles while compiling
+* */
+fun convert1(x: Double, converter: (Double)-> Double): Double {
   // code to convert the Double
   val result = converter(x)
   println("$x is convereted to $result")
