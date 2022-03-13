@@ -45,4 +45,10 @@ fun main() {
     println(it.key)
     it.value.forEach { println("      ${it.name}")}
   }
+
+  val allNames = groceries.fold("") { runningString, item -> runningString + " ${item.name}" }
+  println("All Item names ${allNames}")
+
+  val subtractFromFifty = groceries.fold(50.0) { change, item -> change - item.quantity * item.unitPrice}
+  println("The change you get if you pay Fifty dollars for all groceries is ${subtractFromFifty}")
 }
