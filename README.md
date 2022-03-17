@@ -1,7 +1,6 @@
-# Kotlin
+# Kotlin Play ground 
 
-This is the Template Repl for Kotlin.
+Us this as a playground to test out repl.it
+Also learning about Kotlin. 
 
-Kotlin is a statically typed programming language interoperable with Java and Android
 
-[Check out the official docs here](https://kotlinlang.org/docs/home.html).
